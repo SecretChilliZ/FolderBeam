@@ -100,7 +100,7 @@ uv run pytest
 
 ## Built with
 
-Built with **Claude Opus 4.8** (Anthropic).
+Made with **Claude Opus 4.8** (Anthropic).
 
 ## Roadmap (1.1)
 
