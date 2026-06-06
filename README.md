@@ -100,7 +100,7 @@ uv run pytest
 
 ## Built with
 
-Developed in a pair-programming session with **Claude Opus 4.8** (Anthropic): spec first, then a written implementation plan, then test-driven development one small commit at a time.
+Built with **Claude Opus 4.8** (Anthropic).
 
 ## Roadmap (1.1)
 
