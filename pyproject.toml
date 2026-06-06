@@ -1,0 +1,36 @@
+[project]
+name = "folderbeam"
+version = "0.1.0"
+description = "Share one jailed folder over WebDAV and a browser file manager, with a PySide6 tray app."
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "pyside6>=6.11",
+    "wsgidav>=4.3",
+    "cheroot>=10.0",
+    "flask>=3.0",
+    "qrcode[pil]>=7.4",
+]
+
+[project.scripts]
+folderbeam = "folderbeam.app:main"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.20.0",
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+# Route tmp_path into a project-local dir; the user temp base has a
+# restrictive ACL in this environment (WinError 5 on the default base).
+addopts = "--basetemp=.pytest_tmp"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/folderbeam"]

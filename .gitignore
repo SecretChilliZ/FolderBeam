@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest_tmp/
+
+# Runtime / local state (never commit credentials)
+config.json
+.folderbeam/
+.gui.log
+*.log
+
+# PyInstaller build output
+build/
+dist/
+*.spec
+*.exe
+
+# Internal dev artifacts (kept local, not part of the repo)
+docs/plans/
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editors / IDEs
+.idea/
+.vscode/
